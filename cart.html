@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnrukiShop</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/cart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <nav id="nav"></nav>
+    
+    <section id="section">
+        <div id="container" class="container">
+            <div class="title">
+                <h4>Shopping Cart</h4>
+                <span id="itemsCount"></span>
+            </div>
+            <div id="items" class="items"></div>
+            <div class="cart-total">
+                <span id="total"></span>
+                <button id="checkoutBtn">Checkout <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="JS/features/cart/cart.js"></script>
+</body>
+
+</html>

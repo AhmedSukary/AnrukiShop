@@ -1,0 +1,224 @@
+#accountLink {
+    color: var(--primary-color);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+}
+
+.container>.title {
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--text-muted);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+aside {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+
+}
+
+aside .avatar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--text-muted);
+    border-radius: var(--border-radius);
+}
+
+aside .avatar i {
+    font-size: 40px;
+}
+
+aside .avatar .name {
+    font-size: 20px;
+}
+
+aside .avatar .email {
+    width: 100%;
+    color: var(--primary-color);
+}
+
+aside .user-info,
+aside .orders {
+    width: 100%;
+    border: 1px solid var(--text-muted);
+    border-radius: var(--border-radius);
+}
+
+aside .title {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid var(--text-muted);
+}
+
+aside .order-options,
+aside .user-info-options {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+aside .option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+aside .option:hover {
+    color: var(--bg-light);
+    background-color: var(--primary-color);
+}
+
+aside .clicked {
+    color: var(--bg-light);
+    background-color: var(--primary-color);
+}
+
+.logout {
+    max-width: 200px;
+    width: 100%;
+    padding: 5px;
+    color: var(--text-light);
+    border: 1px solid var(--text-muted);
+    background-color: var(--bg-light);
+}
+
+.content-data {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--text-muted);
+    border-radius: var(--border-radius);
+}
+
+
+.content-data .user-info,
+.content-data .user-address,
+.content-data .user-change-password {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.content-data .user-info .name,
+.content-data .user-info .phone,
+.content-data .user-info .birth,
+.content-data .user-info .save,
+.content-data .user-address .country,
+.content-data .user-address .city,
+.content-data .user-address .region,
+.content-data .user-address .address-line,
+.content-data .user-address .save,
+.content-data .user-change-password .password,
+.content-data .user-change-password .save {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    gap: 5px;
+}
+
+.content-data .user-change-password .show-password-box {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    gap: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.content-data .orders {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content-data .title {
+    padding: 10px;
+    border-bottom: 1px solid var(--text-muted);
+}
+
+.content-data .orders .order {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--bg);
+    border-radius: var(--border-radius);
+
+}
+
+.content-data .orders .order .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-data .orders .order p {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.content-data .orders .order p a i {
+    color: var(--red-color);
+}
+
+.content-data .orders .order button {
+    width: 150px;
+    padding: 5px;
+}
+
+@media (max-width: 750px) {
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .logout {
+        margin-top: 50px;
+    }
+}

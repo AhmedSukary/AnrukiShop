@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnrukiShop</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="header"></header>
+    
+    <section id="section">
+        <div class="container">
+            <div class="title">My Account</div>
+            <div class="content">
+                <aside id="aside">
+                    <div class="avatar">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="name" id="name"></span>
+                        <span class="email" id="email"></span>
+                    </div>
+                    <div class="orders">
+                        <span class="title">My Orders</span>
+                        <div class="order-options">
+                            <span class="option" id="pendingOption"><i class="fa-solid fa-dolly"></i> Pending</span>
+                            <span class="option" id="paidOption"><i class="fa-solid fa-truck"></i> Paid</span>
+                            <span class="option" id="shopedOption"><i class="fa-solid fa-box-open"></i> Shipped</span>
+                            <span class="option" id="cancelledOption"><i class="fa-solid fa-ban"></i> Cancelled</span>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <span class="title">My Account & Help</span>
+                        <div class="user-info-options">
+                            <span class="option clicked" id="informationOption"><i class="fa-solid fa-user"></i> My
+                                Information</span>
+                            <span class="option" id="addressOption"><i class="fa-solid fa-map-location-dot"></i> My
+                                Address</span>
+                            <span class="option" id="passwordChangeOption"><i class="fa-solid fa-lock"></i> Password
+                                Change</span>
+                            <span class="option" id="helpOption"><i class="fa-regular fa-circle-question"></i>
+                                Help</span>
+                        </div>
+                    </div>
+                </aside>
+                <div class="content-data" id="contentData"></div>
+            </div>
+            <button class="logout" id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</button>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="JS/features/user/user.js"></script>
+</body>
+
+</html>

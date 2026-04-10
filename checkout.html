@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnrukiShop</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="section">
+        <div class="content">
+            <div class="title">Checkout</div>
+            <div class="form">
+                <div class="chekout-info">
+                    <div class="name">
+                        <span class="label">Full Name</span>
+                        <input type="text" id="name" readonly placeholder="Full name" required>
+                    </div>
+                    <div class="email">
+                        <span class="label">Email</span>
+                        <input type="text" id="email" readonly placeholder="Email" required>
+                    </div>
+                    <div class="phone">
+                        <span class="label">Phone</span>
+                        <input type="tel" id="phone" readonly placeholder="Phone Number" required>
+                    </div>
+                    <div class="default-address">
+                        <span class="label">Use default address</span>
+                        <input type="checkbox" id="useDefaultAddress">
+                    </div>
+                    <div class="country">
+                        <span class="label">Country</span>
+                        <input type="text" id="country" placeholder="Country" required>
+                    </div>
+                    <div class="address">
+                        <div class="city">
+                            <span class="label">City</span>
+                            <input type="text" id="city" placeholder="City" required>
+                        </div>
+                        <div class="region">
+                            <span class="label">Region</span>
+                            <input type="text" id="region" placeholder="Region" required>
+                        </div>
+                        <div class="address-line">
+                            <span class="label">Address Line</span>
+                            <input type="text" id="addressLine" placeholder="Address Line" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="pay-info">
+                    <div class="order">
+                        <span>Review your order</span>
+                        <div class="items" id="items"></div>
+                    </div>
+                    <span class="total" id="total">Total 0.00$</span>
+                    <button id="payBtn">Progress to Pay</button>
+                    <p id="message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="JS/features/checkout/checkout.js"></script>
+</body>
+
+</html>

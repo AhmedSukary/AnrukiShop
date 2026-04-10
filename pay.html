@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnrukiShop</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/payment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="logo"><a href="index.html">AnrukiShop<i class="fa-solid fa-bag-shopping"></i></a></h1>
+        <div class="form">
+            <span>Please select payment method</span>
+            <div class="payment-method">
+                <img src="https://i.ibb.co/pBXmSbMH/0409b7aa52fb.png" alt="">
+                <span>Master Cart</span>
+                <input type="radio" name="method" value="1" id="masterCartRadio" checked>
+            </div>
+            <div class="payment-method">
+                <img src="https://i.ibb.co/jPBv3jq2/1d7c6de848f5.png" alt="">
+                <span>Stripe</span>
+                <input type="radio" name="method" value="3" id="stripeRadio">
+            </div>
+            <div class="payment-method">
+                <img src="https://i.ibb.co/MDDfpJGG/4c624a269353.png" alt="">
+                <span>PayPal</span>
+                <input type="radio" name="method" value="2" id="payPalRadio">
+            </div>
+            <span id="total">Total: 00.0$</span>
+            <button id="payBtn">Pay</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script type="module" src="JS/features/payment/payment.js"></script>
+</body>
+
+</html>
