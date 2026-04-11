@@ -52,7 +52,7 @@ export async function renderProductsSummary() {
                     await addToWishlist(wishlist.id, p.id);
                 }
             } else
-                window.location.href = "/login.html";
+                window.location.href = "login.html";
         });
     }
 }
@@ -88,7 +88,7 @@ export async function renderProductsByCategoryId(id) {
                     await addToWishlist(wishlist.id, p.id);
                 }
             } else
-                window.location.href = "/login.html";
+                window.location.href = "login.html";
         });
     }
 }
@@ -124,7 +124,7 @@ export async function renderSearchProducts(query) {
                     await addToWishlist(wishlist.id, p.id);
                 }
             } else
-                window.location.href = "/login.html";
+                window.location.href = "login.html";
         });
     }
 }
